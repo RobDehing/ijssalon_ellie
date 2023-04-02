@@ -1,6 +1,5 @@
 from algemene_functies import mijn_functie_2
 
-
 def aanbieding_1(smaak, prijs, korting): 
     uitvoer = f"Vandaag in de aanbieding: emmertje ijs (1 liter) in de smaak {smaak}, van {prijs:.2f} euro voor {prijs - (prijs * korting):.2f} euro."
     return uitvoer
@@ -25,20 +24,8 @@ def meervoudig(invoer_lijst):
     uitvoer = laag_en_hoog(mijn_lijst = invoer_lijst)   
     return uitvoer
     
-
-
 def combinatie(invoer_lijst_2):
     korte_lijst = laag_en_hoog(invoer_lijst_2)
     uitvoer = mijn_functie_2(korte_lijst[0], korte_lijst[1])
     return uitvoer
 
-
-
-
-
-print(aanbieding_1("aardbei", 4, 0.1))      # nog op 2 decimalen
-print(inkomsten_totaal([220, 430, 125, 160, 205, 90, 345], 9))
-print(laag_en_hoog([220, 430, 125, 160, 205, 90, 345]))
-print(gemiddelde([220, 430, 125, 160, 205, 90, 345]))
-print(meervoudig([10,5,3,2,1,2,9]))
-print(combinatie([2,10,5,8]))
