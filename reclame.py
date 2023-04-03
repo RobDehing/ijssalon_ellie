@@ -6,8 +6,8 @@ def aanbieding_1(smaak, prijs, korting):
 
 def inkomsten_totaal(inkomsten, btw):
     totaal = sum(inkomsten)
-    bedrag = (sum(inkomsten) * btw/100)
-    uitvoer = f"Het totaal van alle inkomsten van deze week is {totaal} euro, waarover {bedrag} euro btw betaald dient te worden."
+    btw_bedrag = (sum(inkomsten) * btw/100)
+    uitvoer = f"Het totaal van alle inkomsten van deze week is {totaal:.2f} euro, waarover {btw_bedrag:.2f} euro btw betaald dient te worden."
     return uitvoer
 
 def laag_en_hoog(mijn_lijst):

@@ -25,4 +25,3 @@ def print_aanbieding():
 
 decodeer("Aanbieding")
 print(print_aanbieding())
-
