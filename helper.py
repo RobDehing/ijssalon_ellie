@@ -5,3 +5,8 @@ def decodeer(tekst=""):
     print(f"* {tekst} *")
     print(lengte * "*")
     print()
+
+def fooi_pp(bedrag, personen):
+        bedrag_pp = bedrag / personen
+        uitvoer = f"Het bedrag per persoon is {bedrag_pp} euro."
+        return uitvoer
