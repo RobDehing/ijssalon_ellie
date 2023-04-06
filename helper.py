@@ -8,5 +8,16 @@ def decodeer(tekst=""):
 
 def fooi_pp(bedrag, personen):
     bedrag_pp = bedrag / personen
-    uitvoer = f"Het bedrag per persoon is {bedrag_pp} euro."
-    return uitvoer
+    return f"Het bedrag per persoon is {bedrag_pp} euro."
+
+def onderstreep(tekst):
+    uit = []
+    uit.append(tekst)
+    uit.append(len(tekst) * '=')
+    return uit
+
+def som(dictionary):
+    totaal_dictionary = 0
+    for key, value in dictionary:
+        totaal_dictionary += value
+    return totaal_dictionary
