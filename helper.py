@@ -18,6 +18,8 @@ def onderstreep(tekst):
 
 def som(dictionary):
     totaal_dictionary = 0
-    for key, value in dictionary:
+    for key, value in dictionary.items():
         totaal_dictionary += value
     return totaal_dictionary
+
+
